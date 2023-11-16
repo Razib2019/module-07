@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container {
+  height: 96vh;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.left-box-container {
+  background-color: red;
+}
+
+.right-box-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid springgreen;
+}
+
+.right-box-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.box-2-container {
+  background-color: orange;
+  height: 100%;
+}
+
+.box-3-container {
+  background-color: purple;
+}
+.box-4-container {
+  background-color: gray;
+}

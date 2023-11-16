@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 02</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .main-container {
+        border: 10px solid saddlebrown;
+        height: 95vh;
+        padding: 1%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+      }
+      .left-box-container {
+        border: 1px solid red;
+        background-color: red;
+      }
+      .right-box-container {
+        gap: 1%;
+        display: grid;
+      }
+
+      .box-2-container {
+        background-color: orange;
+        height: 100%;
+      }
+      .right-box-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+      }
+      .box-3-container {
+        background-color: purple;
+      }
+      .box-4-container {
+        background-color: gray;
+      }
+      /* Media Query Implementation */
+      @media screen and (max-width: 576px) {
+        .main-container {
+          display: flex;
+          flex-direction: column;
+        }
+        .left-box-container {
+          height: 100%;
+        }
+        .right-box-container {
+          height: 100%;
+        }
+        .right-box-top {
+          height: 100%;
+        }
+
+        .right-box-bottom {
+          display: flex;
+          flex-direction: column;
+          height: 50vh;
+        }
+        .box-3-container {
+          height: 100%;
+        }
+        .box-4-container {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-box-container">1</div>
+      <div class="right-box-container">
+        <div class="right-box-top">
+          <div class="box-2-container">2</div>
+        </div>
+        <div class="right-box-bottom">
+          <div class="box-3-container">3</div>
+          <div class="box-4-container">4</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
